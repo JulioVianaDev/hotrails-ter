@@ -1,0 +1,17 @@
+<h1>Editando o post</h1>
+
+<%= form_with model: @post, data: { type: :hotwire } do |form| %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  </div>
+  <div class="btn btn-primary">
+      <button type="button" class="btn btn-outline-success"><%= form.submit'Create a new barber?' %> </button>
+
+  </div>
+<%end%>
